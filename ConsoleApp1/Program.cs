@@ -23,11 +23,10 @@ public class Program
         {
             rng.GetBytes(saltBytes);
         }
+        //returning string for generated salt
         return Convert.ToBase64String(saltBytes);
     }
-    //string password = "userpassword";
-    //string salt = Program.GenerateSalt();
-    //string hashedPassword = Program.HashPassword(password, salt);
+    
     static void Main(string[] args)
     {
         // Generate a salt
